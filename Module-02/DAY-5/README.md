@@ -59,6 +59,7 @@ public class LargestElement {
 
 
 ## OUTPUT:
+<img width="902" height="373" alt="image" src="https://github.com/user-attachments/assets/3c6a36da-d3ed-445c-aa1a-eacec238a8cd" />
 
 
 
