@@ -65,6 +65,7 @@ public class Main {
 
 ## OUTPUT:
 
+<img width="960" height="516" alt="image" src="https://github.com/user-attachments/assets/04e07f81-0b97-47c6-a7da-a67103217ccf" />
 
 
 ## RESULT:
