@@ -33,29 +33,33 @@ RegisterNumber:  212224040248
 
 ## Sourcecode.java:
 ```
-class Laptop {
-    String brand;
-    double price;
-    public Laptop() {
-        this.brand = "Apple";
-        this.price = 42500.75;
+public class Employee {
+    // Instance variables for employee details
+    private String name;
+    private int age;
+    private String designation;
+
+    // Default constructor to initialize the employee details
+    public Employee() {
+        // Assign default values
+        this.name = "Robert";
+        this.age = 35;
+        this.designation = "Senior Developer";
     }
 
-    public String getBrand() {
-        return brand;
+    // Instance method to display employee details
+    public void displayDetails() {
+        System.out.println("Name is:" + name);
+        System.out.println("Age is:" + age);
+        System.out.println("Designation is:" + designation);
     }
 
-    public double getPrice() {
-        return price;
-    }
-}
-public class Sample {
     public static void main(String[] args) {
-        Laptop myLaptop = new Laptop();
-        String laptopBrand = myLaptop.getBrand();
-        System.out.println(laptopBrand);
-        double laptopPrice = myLaptop.getPrice();
-        System.out.println(laptopPrice);
+        // Create an object of the Employee class using the default constructor
+        Employee employee = new Employee();
+
+        // Call the displayDetails method to print employee information
+        employee.displayDetails();
     }
 }
 ```
@@ -66,8 +70,8 @@ public class Sample {
 
 
 ## OUTPUT:
+<img width="715" height="197" alt="image" src="https://github.com/user-attachments/assets/7cce70fa-6d06-4fae-95cc-31175a999c40" />
 
-<img width="393" height="266" alt="image" src="https://github.com/user-attachments/assets/0a15648d-2bdc-4028-ae1b-646d218d0331" />
 
 
 ## RESULT:
