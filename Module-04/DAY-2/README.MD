@@ -102,7 +102,20 @@ public class Main {
 
 
 ## OUTPUT:
+```
+Input                    Expected                                      Got
 
+✓ Peter                  Name: PeterEmp_ID: 51Department: Accounts    Name: PeterEmp_ID: 51Department: Accounts ✓
+  51
+  Accounts
+
+✓ Fayaz                  Name: FayazEmp_ID: 11Department: Software    Name: FayazEmp_ID: 11Department: Software ✓
+  11
+  Software Developer
+
+
+Passed all tests! ✔
+```
 
 
 
