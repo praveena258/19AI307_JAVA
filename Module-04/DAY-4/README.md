@@ -36,33 +36,39 @@ RegisterNumber:  212224040248
 
 ## Sourcecode.java:
 ```
-class Subject {
-    String subject1, subject2, subject3, subject4;
-
-    void dispSub(String s1, String s2, String s3, String s4) {
-        subject1 = s1;
-        subject2 = s2;
-        subject3 = s3;
-        subject4 = s4;
-        System.out.println(subject1 + " " + subject2 + " " + subject3 + " " + subject4);
+class Name
+{
+    String Fname;
+    String Mname;
+    String Lname;
+    void dispName(String fn,String mn,String ln)
+    {
+        Fname=fn;
+        Mname=mn;
+        Lname=ln;
+        System.out.println(Fname+" "+Mname+" "+Lname);
     }
 }
-
-class Student {
-    int Stu_Id;
-    Subject sub = new Subject();
-
-    void disp(int id, String s1, String s2, String s3, String s4) {
-        Stu_Id = id;
-        System.out.println(Stu_Id);
-        sub.dispSub(s1, s2, s3, s4);
+class Employee
+{
+    int Emp_Id;
+    Name obj=new Name();
+    void dispName(int id,String fn,String mn,String ln)
+    {
+        Emp_Id=id;
+        System.out.println(Emp_Id);
+        obj.dispName(fn,mn,ln);
     }
+    
 }
 
-public class Main {
-    public static void main(String[] args) {
-        Student st = new Student();
-        st.disp(101, "Java", "DS", "TOC", "CG");
+public class Main
+{
+    public static void main(String[] args)
+    {
+      Employee e1=new Employee();
+      e1.dispName(101,"B","Leo","John");
+        
     }
 }
 ```
@@ -73,7 +79,8 @@ public class Main {
 
 
 ## OUTPUT:
-<img width="459" height="275" alt="image" src="https://github.com/user-attachments/assets/9883bb13-044b-4c3f-8d9d-4ed9e687c8f7" />
+<img width="500" height="182" alt="image" src="https://github.com/user-attachments/assets/1ae1bb4e-65b0-4115-85b9-dc04612d0ec7" />
+
 
 
 
