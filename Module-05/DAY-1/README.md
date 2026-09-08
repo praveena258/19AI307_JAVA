@@ -33,31 +33,33 @@ RegisterNumber:  212224040248
 
 ## Sourcecode.java:
 ```
-import java.util.Scanner;
-
-class Person {
-    private int age;
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-
-    public int getAge() {
-        return age;
-    }
+import java.util.*;
+class vehicle {
+ private String vName;
+ private String vlocation;
+ public String getvName() {
+  return vName;
+ }
+ public void setvName(String vName) {
+  this.vName = vName;
+ }
+ public String getLocation() {
+  return vlocation;
+ }
+ public void setLocation(String vlocation) {
+  this.vlocation = vlocation;
+ }
 }
 
-public class Main {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        Person p = new Person();
-
-        int inputAge = scanner.nextInt();
-        p.setAge(inputAge);
-
-        System.out.println("My age is " + p.getAge());
-        scanner.close();
-    }
+public class EmployeMain {
+ public static void main(String[] args) {
+    Scanner sc=new Scanner(System.in);
+  vehicle employee = new vehicle();
+  employee.setvName(sc.nextLine());
+  employee.setLocation(sc.nextLine());
+  System.out.println(employee.getvName());
+  System.out.println(employee.getLocation());
+ }
 }
 ```
 
@@ -67,7 +69,8 @@ public class Main {
 
 
 ## OUTPUT:
-<img width="477" height="254" alt="image" src="https://github.com/user-attachments/assets/71e4349b-a4cc-4e5d-beda-6880da65a58f" />
+<img width="452" height="305" alt="image" src="https://github.com/user-attachments/assets/d73db5fd-86a3-40c7-abf7-01849f1e6dd3" />
+
 
 
 
