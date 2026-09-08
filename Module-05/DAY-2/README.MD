@@ -80,8 +80,21 @@ public static void main(String args[]){
 
 
 ## OUTPUT:
+```
+Input      Expected      Got
+
+✓ 5        50            50 ✓
+  10
+
+✓ 5        25            25 ✓
+  5
+
+✓ 3        9             9 ✓
+  3
 
 
+Passed all tests! ✔
+```
 
 ## RESULT:
 Thus a java program to display the value of volume of cylinder get the radius and height value as input and use tightly encapsulated class was executed successfully.
