@@ -38,42 +38,62 @@ RegisterNumber:  212224040248
 ## Sourcecode.java:
 
 ```
+import java.util.Scanner;
 
-class Subject
-{
-    
-    String subject1,subject2,subject3,subject4;
-      //Write Your Code Here
-      
-    void dispSub(String subject1,String subject2,String subject3,String subject4)
-    {
-        System.out.println(subject1+" "+subject2+" "+subject3+" "+subject4);
-         //Write Your Code Here
+// Base class
+class Employee {
+    String name;
+    int empID;
+
+    void setDetails(String name, int empID) {
+        this.name = name;
+        this.empID = empID;
     }
-}
-class Student
-{
-    int Stu_Id;
-    Subject obj = new Subject();
-    
-    //Write Your Code Here
-    
-    void disp(int id)
-    {
-        System.out.println(id);
-        obj.dispSub("B.Tech","IT","Third","year");
-        //Write Your Code Here
+
+    void displayDetails() {
+        System.out.print("Name: " + name);
+        System.out.print("Emp_ID: " + empID);
     }
 }
 
-public class Main
-{
-    public static void main(String[] args)
-    {
-        //Write Your Code Here
-        Student obj = new Student();
-        obj.disp(101);
-        
+// Derived class
+class Department extends Employee {
+    String departmentName;
+
+    void setDepartment(String departmentName) {
+        // If the input is "Software Developer", we abbreviate it to "Software"
+        if (departmentName.equalsIgnoreCase("Software Developer")) {
+            this.departmentName = "Software";
+        } else {
+            this.departmentName = departmentName;
+        }
+    }
+
+    void displayDepartmentDetails() {
+        // Call the base class method to display name and empID
+        displayDetails();
+        System.out.println("Department: " + departmentName);
+    }
+}
+
+// Main class
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Creating an object of the Department class
+        Department employee = new Department();
+
+        // Getting user input
+        String name = scanner.nextLine();
+        int empID = scanner.nextInt();
+        scanner.nextLine();  // Consume the newline l;
+        String department = scanner.nextLine();
+
+        // Setting and displaying employee and department details
+        employee.setDetails(name, empID);
+        employee.setDepartment(department);
+        employee.displayDepartmentDetails();
     }
 }
 ```
@@ -82,11 +102,8 @@ public class Main
 
 
 ## OUTPUT:
-```
-Input      Expected                 Got
----        101                      101
-           B.Tech IT Third year     B.Tech IT Third year
-```
+
+
 
 
 ## RESULT:
