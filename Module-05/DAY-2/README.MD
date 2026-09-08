@@ -34,32 +34,43 @@ RegisterNumber:  212224040248
 
 ## Sourcecode.java:
 ```
-import java.util.Scanner;
+import java.util.*;
+public class SetAndGet {
+ 
+ private int w;
+ private int h;
 
-class StringReverser {
-    private String text;
 
-    public void setText(String text) {
-        this.text = text;
-    }
-
-    public String getReversedText() {
-        StringBuilder sb = new StringBuilder(text);
-        return sb.reverse().toString();
-    }
+public int getWidth() {
+ return w;
 }
 
-public class Main {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        StringReverser sr = new StringReverser();
+public void setWidth(int w) {
+ this.w = w;
+}
 
-        String input = scanner.nextLine();
-        sr.setText(input);
+public int getHeight() {
+ return h;
+}
 
-        System.out.println(sr.getReversedText());
-        scanner.close();
-    }
+public void setHeight(int h) {
+ this.h = h;
+}
+
+
+public static void main(String args[]){
+ Scanner sc=new Scanner(System.in);
+ SetAndGet obj = new SetAndGet();
+ int s1=sc.nextInt();
+ int s2=sc.nextInt();
+ 
+ obj.setWidth(s1);
+ obj.setHeight(s2);
+ System.out.println(obj.getWidth() * obj.getHeight());
+
+}
+
+
 }
 ```
 
@@ -69,14 +80,7 @@ public class Main {
 
 
 ## OUTPUT:
-```
-Input     Expected    Got
 
-pot       top         top
-
-lap       pal         pal
-
-```
 
 
 ## RESULT:
