@@ -36,37 +36,31 @@ RegisterNumber:  212224040248
 
 ```
 
-class Gadgets {
 
-  //Write Your code Here
-  void display()
-  {
-      System.out.println("I am a Gadget");
-  }
+// Base class Vehicle
+class Vehicle {
+    // Constructor for Vehicle
+    Vehicle() {
+        System.out.println("I am a Vehicle");
+    }
 }
 
-class Parrot extends Gadgets {
-
-//Write Your code Here  
-void display()
-{
-    System.out.println("I am a Laptop");
-}
-void print()
-{
-    super.display();
-}
-  
+// Derived class Car that extends Vehicle
+class Car extends Vehicle {
+    // Constructor for Car
+    Car() {
+        // Call the constructor of Vehicle
+        super();
+        System.out.println("I am a Car");
+    }
 }
 
+// Main class to test the implementation
 public class Main {
-  public static void main(String[] args) {
-      
-      //Write Your code Here
-      Parrot obj=new Parrot();
-      obj.display();
-      obj.print();
-  }
+    public static void main(String[] args) {
+        // Create an instance of Car
+        Car car = new Car();
+    }
 }
 
 ```
@@ -76,7 +70,8 @@ public class Main {
 
 
 ## OUTPUT:
-<img width="410" height="280" alt="image" src="https://github.com/user-attachments/assets/0ffa1f0a-d9ce-457f-8407-f353e3c2bf73" />
+<img width="450" height="176" alt="image" src="https://github.com/user-attachments/assets/832193bd-d92c-4906-8208-776ee447b5d2" />
+
 
 
 
