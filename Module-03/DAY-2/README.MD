@@ -51,13 +51,16 @@ public class StringBufferExample3{
 ## OUTPUT:
 
 ```
-Input         Expected       Got
+Input       Expected      Got
 
-Hello         Hello Java     Hello Java
-Java 
+✓ Hello     HJavalo       HJavalo       ✓
 
-Hi            Hi Welcome     Hi Welcome
-Welcome
+✓ college   cJavalege     cJavalege     ✓
+
+✓ bag       bJava         bJava         ✓
+
+
+Passed all tests! ✔
 ```
 
 
